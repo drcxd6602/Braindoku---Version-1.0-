@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        article {
+  /*  leverage cascade for cross-browser gradients  */
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+} 
+
+body {
+  background: hsl(204 100% 5%);
+/*   background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%),
+    hsl(100 100% 60%)
+  ) fixed; */
+  color: white;
+  min-block-size: 100vh;
+  min-inline-size: 100%;
+  padding: 5vmin;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui;
+  font-size: min(200%, 5vmin);
+}
+
+h1, p, body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 10vmin;
+  line-height: 1.1;
+  max-inline-size: 15ch;
+  margin: auto;
+}
+
+p {
+  font-family: "Dank Mono", ui-monospace, monospace;
+  margin-top: 1ch;
+  line-height: 1.35;
+  max-inline-size: 40ch;
+  margin: auto;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+  text-align: center;
+}
+
+button{
+    border-radius: 1em;
+    border: 1px solid white;
+    height: 2em;
+    font-weight: bold;
+    margin: 2px;
+    background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Start Game</h1>
+        <p>Select Level</p>
+
+      </article>
+
+      <button onclick="load1()">LEVEL 1</button>
+      <button onclick="load2()">LEVEL 2</button>
+      <button onclick="load3()">LEVEL 3</button>
+      <button onclick="load4()">LEVEL 4</button>
+      <button onclick="load5()">LEVEL 5</button>
+      <button onclick="load6()">LEVEL 6</button>
+      <button onclick="load7()">LEVEL 7</button>
+</body>
+
+
+<script>
+    function load1(){
+        location.replace('level1.html')
+    } 
+    function load2(){
+        location.replace('level2.html')
+    }
+    function load3(){
+        location.replace('level3.html')
+    }
+    function load4(){
+        location.replace('level4.html')
+    }
+    function load5(){
+        location.replace('level5.html')
+    }
+    function load6(){
+        location.replace('level6.html')
+    } 
+  </script>
+
+</html>
